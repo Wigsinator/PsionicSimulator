@@ -14,12 +14,12 @@ abstract class Die {
 		return randomizer.nextInt(size)+1;
 	}
 	
-	Die increase() {
-		return null;
-	}
+	abstract Die increase();
 	
-	Die decrease() {
-		return null;
+	abstract Die decrease();
+	
+	void setSize(int size) {
+		this.size = size;
 	}
 	
 	int getSize() {
